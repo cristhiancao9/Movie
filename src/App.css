@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+.card {
+  display: flex;
+  background: none;
+
+  /*   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(49, 47, 47, 0.5); */
+}
