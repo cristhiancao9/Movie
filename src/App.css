@@ -1,11 +1,11 @@
 .App {
   text-align: center;
 }
-.card {
+/* .card {
   display: flex;
   background: none;
+  justify-content: space-around;
 
   /*   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   background-color: rgba(49, 47, 47, 0.5); */
-}

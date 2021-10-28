@@ -6,17 +6,19 @@
 }
 
 .contenedor-card {
-  width: 12rem;
+  width: 15rem;
   height: 20rem;
   display: grid;
   justify-content: center;
   margin-bottom: 2rem;
   margin: 1rem;
   padding-top: 0.4rem;
+
   /*   padding-left: 1.5rem;
   padding-right: 1.5rem; */
   /*  border: 3px solid white; */
   border-radius: 15px;
+  justify-items: center;
 }
 .contenedor-card img {
   width: 180px;
@@ -28,12 +30,15 @@
 }
 .title-year {
   display: flex;
-  flex-direction: row;
+  flex-direction: unset;
   justify-content: space-between;
+  width: 76%;
+  align-self: center;
+  align-items: flex-end;
 }
 .title-cards {
   color: azure;
-  font-size: large;
+  font-size: small;
 }
 
 .year-cards {

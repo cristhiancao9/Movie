@@ -3,11 +3,22 @@ import { NavLink } from "react-router-dom";
 import "./Nav.css";
 import img from "../img/pal1.svg";
 import Search from "./Search";
-export default function Nav() {
+import { useHistory } from "react-router-dom";
+import { connect } from "react-redux";
+import { getHome } from "../actions/index";
+function Nav(props) {
+  let history = useHistory();
   return (
     <div className="nav-bg">
       <div className="nav-principal">
-        <NavLink to="/" className="titulo">
+        <NavLink
+          to="/Home"
+          className="titulo"
+          onClick={() => {
+            props.getHome();
+            history.push("/Home");
+          }}
+        >
           <div className="img-titulo">
             <img src={img} alt="" className="img" />
             <h1>Movies</h1>
@@ -20,3 +31,9 @@ export default function Nav() {
     </div>
   );
 }
+function mapDispatchToProps(dispatch) {
+  return {
+    getHome: () => dispatch(getHome()),
+  };
+}
+export default connect(null, mapDispatchToProps)(Nav);

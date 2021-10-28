@@ -3,8 +3,10 @@ import "./Search.css";
 import { useState } from "react";
 import { connect } from "react-redux";
 import { getMovie } from "../actions/index.js";
+import { useHistory } from "react-router-dom";
 function Search(props) {
   const [searchMovie, setSearchMovie] = useState("");
+  let history = useHistory();
   function handleChange(e) {
     e.preventDefault();
     setSearchMovie(e.target.value);
@@ -12,6 +14,7 @@ function Search(props) {
   function handleSubmit(e) {
     e.preventDefault();
     props.getMovie(searchMovie);
+    history.push("/card");
   }
   return (
     <div>
