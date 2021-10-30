@@ -1,13 +1,16 @@
 import React from "react";
 import { connect } from "react-redux";
-
+import { getHome } from "../actions/index";
 import "./Card.css";
 
 function Home(props) {
-  /*   props.homes && console.log(props.homes[0]); */
-  /*   console.log(props.homes); */
+  function aleatorio(array) {
+    array.sort(() => Math.random() - 0.6);
+  }
+  aleatorio(props.homes);
   return (
     <React.Fragment>
+      {props.homes.length < 1 ? props.getHome() : null}
       <div className="main">
         {props.homes &&
           props.homes
@@ -29,4 +32,9 @@ const mapStateToProps = (state) => ({
   homes: state.homes,
 });
 
-export default connect(mapStateToProps, null)(Home);
+function mapDispatchToProps(dispatch) {
+  return {
+    getHome: () => dispatch(getHome()),
+  };
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

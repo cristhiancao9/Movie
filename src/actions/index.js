@@ -6,18 +6,13 @@ const names = [
   "lego",
   "minions",
   "spider man", */
-  "jungle",
+  "batman",
   "iron+man",
-  "police",
-  "box",
-  "origen",
-  "live",
+  "jungle",
   "job",
   "jurassic",
-  "isla",
-  "dad",
-  "bomb",
 ];
+
 const movie = [];
 names.forEach((mov, i) => {
   movie.push(

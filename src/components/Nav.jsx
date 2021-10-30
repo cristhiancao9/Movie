@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
-import img from "../img/pal1.svg";
+import img from "../img/pal3.svg";
 import Search from "./Search";
 import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
@@ -10,15 +10,14 @@ function Nav(props) {
   let history = useHistory();
   return (
     <React.Fragment>
-      {props.getHome()}
       <div className="nav-bg">
         <div className="nav-principal">
           <NavLink
-            to="/Home"
+            to="/home"
             className="titulo"
             onClick={() => {
               props.getHome();
-              history.push("/Home");
+              history.push("/home");
             }}
           >
             <div className="img-titulo">

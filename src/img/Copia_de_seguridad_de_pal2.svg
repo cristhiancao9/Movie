@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="60mm" height="120mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 6000 12000"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:52.92;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:black}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <rect x="-8081.28" y="2386.45" width="7055.54" height="7408.32"/>
+    </clipPath>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1179636000">
+   <g style="clip-path:url(#id0)">
+    <image x="-8081.28" y="2386.45" width="7055.54" height="7408.32" xlink:href="pal2_Images\pal2_ImgID1.png"/>
+   </g>
+   <g>
+    <path class="fil0" d="M-6962.66 4457.98c-169.01,44.32 -260.54,113.68 -318.19,261.12l5577.9 -8.62c-74.06,-411.71 -371.38,-198.39 -486.95,-171.19 -259,-297.55 -62.03,-463.72 -749.99,-478.69 -201.29,-885.48 -541.66,-750.61 -1052.23,-720.82 -74.57,-226.93 -90.82,-424.47 -349.67,-467.9 -322.19,-54.06 -369.29,150.58 -493.94,315.83 -222.75,-30.06 -277.86,-121.29 -601.09,-104.06 -573.32,30.56 -864.17,452.47 -1032.23,985.59 -367.63,-17.9 -441.7,48.73 -493.61,388.74z"/>
+    <path class="fil0" d="M-4165.46 9314.76c76.6,-48.97 58.88,-51 62.36,-188.07l17.02 -847.31c28.25,-434.81 79.6,-3081.04 123.72,-3254.03l-1094.63 -1.55 139.88 4290.69 751.65 0.27z"/>
+    <path class="fil0" d="M-1765.88 5023.68c-258.96,-1.44 -518.41,1.65 -777.22,-1.44 -244.7,-2.92 -222.24,-49.96 -255.82,143.67 -178.43,1028.76 -650.65,3322.83 -746.1,4149.53l736.72 -4.33 1042.42 -4287.43z"/>
+    <path class="fil0" d="M-7295.6 5036.02c221.71,688.53 735.75,2869.33 974.93,3775.61 169.72,643.08 -11.15,503.64 830.95,501.52l-727.73 -4282.18 -1078.15 5.05z"/>
+   </g>
+   <polyline class="fil1 str0" points="-1438.06,4821.15 -2517.56,9541.32 -6507.48,9551.9 -7697.92,4752.11 "/>
+   <path class="fil1 str0" d="M-7697.92 4752.11c14.61,-326.24 176.9,-522.04 486.86,-587.41"/>
+   <path class="fil1 str0" d="M-7211.06 4164.7c55.46,-274.48 220.36,-421.78 494.7,-441.9 278.32,-748.19 858.64,-1053.78 1740.94,-916.77"/>
+   <path class="fil1 str0" d="M-4984.92 2804.57c443.9,-432.13 851.87,-376.98 1223.9,165.47 543.37,-11.22 900.57,242.35 1071.6,760.7 301.93,-12.7 510.98,119.61 627.13,396.93 503.81,-7.23 711.89,223.93 624.23,693.48"/>
+  </g>
+ </g>
+</svg>

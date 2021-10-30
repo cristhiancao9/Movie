@@ -1,6 +1,7 @@
 const initialState = {
   moviesLoaded: [],
   homes: [],
+  kids: [],
 };
 function rootReducer(state = initialState, action) {
   if (action.type === "GET_MOVIES") {

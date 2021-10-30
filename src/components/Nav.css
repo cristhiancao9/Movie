@@ -11,9 +11,12 @@
 
 .img {
   width: 4rem;
-  height: 6rem;
+  height: 4.5rem;
   display: flex;
   justify-content: flex-end;
+}
+.img:hover {
+  transform: scale(1.1);
 }
 .search {
   display: flex;

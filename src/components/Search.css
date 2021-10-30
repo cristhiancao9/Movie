@@ -10,6 +10,7 @@
   border: 3px solid #000000;
   color: #000000;
   font-weight: bold;
+  outline: none;
 }
 .btn-search {
   border-radius: 0 5px 5px 0;

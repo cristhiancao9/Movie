@@ -15,6 +15,7 @@ function Search(props) {
     e.preventDefault();
     props.getMovie(searchMovie);
     history.push("/card");
+    setSearchMovie("");
   }
   return (
     <div>
