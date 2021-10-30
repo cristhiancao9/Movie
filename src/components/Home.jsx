@@ -5,6 +5,7 @@ import "./Card.css";
 
 function Home(props) {
   /*   props.homes && console.log(props.homes[0]); */
+  /*   console.log(props.homes); */
   return (
     <React.Fragment>
       <div className="main">

@@ -9,26 +9,29 @@ import { getHome } from "../actions/index";
 function Nav(props) {
   let history = useHistory();
   return (
-    <div className="nav-bg">
-      <div className="nav-principal">
-        <NavLink
-          to="/Home"
-          className="titulo"
-          onClick={() => {
-            props.getHome();
-            history.push("/Home");
-          }}
-        >
-          <div className="img-titulo">
-            <img src={img} alt="" className="img" />
-            <h1>Movies</h1>
+    <React.Fragment>
+      {props.getHome()}
+      <div className="nav-bg">
+        <div className="nav-principal">
+          <NavLink
+            to="/Home"
+            className="titulo"
+            onClick={() => {
+              props.getHome();
+              history.push("/Home");
+            }}
+          >
+            <div className="img-titulo">
+              <img src={img} alt="" className="img" />
+              <h1>Movies</h1>
+            </div>
+          </NavLink>
+          <div className="search">
+            <Search></Search>
           </div>
-        </NavLink>
-        <div className="search">
-          <Search></Search>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 function mapDispatchToProps(dispatch) {
