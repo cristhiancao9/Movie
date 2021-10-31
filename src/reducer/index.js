@@ -13,7 +13,10 @@ function rootReducer(state = initialState, action) {
   if (action.type === "HOMES") {
     return {
       ...state,
-      homes: action.payload.map((mov) => mov.Search).flat(),
+      homes: action.payload
+        .map((mov) => mov.Search)
+        .flat()
+        .filter((e) => e.Year >= "2015"),
     };
   }
 

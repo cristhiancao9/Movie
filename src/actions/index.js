@@ -1,23 +1,10 @@
-const names = [
-  /*       "nemo",
-  "cars",
-  "madagascar",
-  "toy story",
-  "lego",
-  "minions",
-  "spider man", */
-  "batman",
-  "iron+man",
-  "jungle",
-  "job",
-  "jurassic",
-];
+import data from "../components/data.js";
 
 const movie = [];
-names.forEach((mov, i) => {
+data.home.forEach((mov, i) => {
   movie.push(
     fetch(
-      `http://www.omdbapi.com/?apikey=2b9c4287&s=${names[i]}&type=movie`
+      `http://www.omdbapi.com/?apikey=2b9c4287&s=${data.home[i]}&type=movie`
     ).then((response) => response.json())
   );
 });

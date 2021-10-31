@@ -4,6 +4,23 @@ import { getHome } from "../actions/index";
 import "./Card.css";
 
 function Home(props) {
+  function removeDuplicates(originalArray, prop) {
+    var newArray = [];
+    var lookupObject = {};
+
+    for (var i in originalArray) {
+      lookupObject[originalArray[i][prop]] = originalArray[i];
+      console.log(lookupObject[originalArray[i][prop]]);
+    }
+
+    for (i in lookupObject) {
+      newArray.push(lookupObject[i]);
+    }
+    return newArray;
+  }
+
+  var uniqueArray = removeDuplicates(props.homes, "Title");
+
   function aleatorio(array) {
     array.sort(() => Math.random() - 0.6);
   }
@@ -13,7 +30,7 @@ function Home(props) {
       {props.homes.length < 1 ? props.getHome() : null}
       <div className="main">
         {props.homes &&
-          props.homes
+          uniqueArray
             .filter((e) => e.Poster !== "N/A")
             .map((e) => (
               <div key={e.imdbID} className="contenedor-card">
