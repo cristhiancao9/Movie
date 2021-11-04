@@ -24,7 +24,7 @@ function Search(props) {
           <input
             className="stilo-search"
             type="text"
-            placeholder="Buscar Peliculas..."
+            placeholder="Buscar Peliculas y Series..."
             value={searchMovie}
             onChange={(e) => handleChange(e)}
           />

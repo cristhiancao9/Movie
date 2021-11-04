@@ -1,0 +1,31 @@
+.linea-stilo {
+  background-color: white;
+  height: 0.2vh;
+}
+.contenedor_botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  height: 5vh;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-radius: 5px;
+}
+
+.boton {
+  background-color: transparent !important;
+  border-radius: 5px;
+  width: 10vh;
+  height: 4vh;
+  color: white;
+  font-size: medium;
+  display: flex;
+  align-content: center;
+  text-decoration: none;
+  justify-content: center;
+  border: none;
+}
+.Nav-link {
+  font-family: sans-serif;
+}

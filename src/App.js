@@ -5,8 +5,11 @@ import { Switch } from "react-router-dom";
 import { Route } from "react-router";
 import Card from "./components/Card";
 import Home from "./components/Home";
+import Kids from "./components/Kids";
 import "../src/components/Card.css";
 import { Redirect } from "react-router";
+import Comics from "./components/Comics";
+
 /* import { useState, useEffect } from "react"; */
 
 function App() {
@@ -27,8 +30,10 @@ function App() {
       <Nav></Nav>
       <Redirect to="/home" />
       <Switch>
-        <Route path="/home" component={Home}></Route>
-        <Route path="/card" component={Card}></Route>
+        <Route path="/home" component={Home} />
+        <Route path="/kids" component={Kids} />
+        <Route path="/comics" component={Comics} />
+        <Route path="/card" component={Card} />
       </Switch>
     </React.Fragment>
   );

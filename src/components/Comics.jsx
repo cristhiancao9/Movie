@@ -1,33 +1,30 @@
 import React from "react";
 import { connect } from "react-redux";
-import { getHome } from "../actions/index";
-import "./Card.css";
-import "./Home.css";
+import { getComics } from "../actions/index";
 import { NavLink } from "react-router-dom";
-function Home(props) {
+import "./Card.css";
+function Comics(props) {
   function removeDuplicates(originalArray, prop) {
-    var newArray = [];
-    var lookupObject = {};
+    var newArray3 = [];
+    var lookupObject3 = {};
 
     for (var i in originalArray) {
-      lookupObject[originalArray[i][prop]] = originalArray[i];
+      lookupObject3[originalArray[i][prop]] = originalArray[i];
     }
 
-    for (i in lookupObject) {
-      newArray.push(lookupObject[i]);
+    for (i in lookupObject3) {
+      newArray3.push(lookupObject3[i]);
     }
-    return newArray;
+    return newArray3;
   }
-
-  var uniqueArray = removeDuplicates(props.homes, "Title");
+  var uniqueArray3 = removeDuplicates(props.comics, "Title");
 
   function aleatorio(array) {
     array.sort(() => Math.random() - 0.6);
   }
-  aleatorio(props.homes);
+  aleatorio(props.comics);
   return (
     <React.Fragment>
-      <div className="linea-stilo"></div>
       <div className="contenedor_botones ">
         <NavLink className="Nav-link" to="/kids">
           <input className="boton" type="submit" value="Kids"></input>
@@ -36,12 +33,29 @@ function Home(props) {
           <input className="boton" type="submit" value="Comics"></input>
         </NavLink>
       </div>
-
-      {props.homes.length < 1 ? props.getHome() : null}
+      {props.comics.length < 1 ? props.getComics() : null}
       <div className="main">
-        {props.homes &&
-          uniqueArray
-            .filter((e) => e.Poster !== "N/A")
+        {props.comics &&
+          uniqueArray3
+            .filter(
+              (e) =>
+                e.Poster !== "N/A" &&
+                e.Title !== "Island of Lemurs: Madagascar" &&
+                e.Title !== "Madagascar, carnet de voyage" &&
+                e.Title !==
+                  "The Penguins of Madagascar - Operation: Get Ducky" &&
+                e.Title !== "Toy Story 3 in Real Life" &&
+                e.Title !== "Toy Story 3" &&
+                e.Title !== "Riding in Cars with Boys" &&
+                e.Title !== "Two Cars, One Night" &&
+                e.Title !== "Stealing Cars" &&
+                e.Title !== "Bikes vs Cars" &&
+                e.Title !== "A Lego Brickumentary" &&
+                e.Title !==
+                  "Scott Adams Talks About How Deep State Minions Spinning Indictment of 13 Russian" &&
+                e.Title !== "Dark Minions" &&
+                e.Title !== "Game of Minions"
+            )
             .map((e) => (
               <div key={e.imdbID} className="contenedor-card">
                 <img className="img_poster" src={e.Poster} alt="" />
@@ -73,12 +87,11 @@ function Home(props) {
   );
 }
 const mapStateToProps = (state) => ({
-  homes: state.homes,
+  comics: state.comics,
 });
-
 function mapDispatchToProps(dispatch) {
   return {
-    getHome: () => dispatch(getHome()),
+    getComics: () => dispatch(getComics()),
   };
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Comics);

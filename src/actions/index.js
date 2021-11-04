@@ -19,6 +19,44 @@ export function getHome() {
       });
   };
 }
+const nKids = [];
+data.kids.forEach((mov, i) => {
+  nKids.push(
+    fetch(
+      `http://www.omdbapi.com/?apikey=2b9c4287&s=${data.kids[i]}&type=movie`
+    ).then((response) => response.json())
+  );
+});
+export function getKids() {
+  return function (dispatch) {
+    Promise.all(nKids)
+      .then((value1) => {
+        dispatch({ type: "KIDS", payload: value1 });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+}
+const nComics = [];
+data.comics.forEach((mov, i) => {
+  nComics.push(
+    fetch(
+      `http://www.omdbapi.com/?apikey=2b9c4287&s=${data.comics[i]}&type=movie`
+    ).then((response) => response.json())
+  );
+});
+export function getComics() {
+  return function (dispatch) {
+    Promise.all(nComics)
+      .then((value2) => {
+        dispatch({ type: "COMICS", payload: value2 });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+}
 export function getMovie(titulo) {
   return function (dispatch) {
     return fetch(

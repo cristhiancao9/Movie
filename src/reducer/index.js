@@ -1,7 +1,8 @@
 const initialState = {
   moviesLoaded: [],
   homes: [],
-  kids: [],
+  kid: [],
+  comics: [],
 };
 function rootReducer(state = initialState, action) {
   if (action.type === "GET_MOVIES") {
@@ -19,7 +20,24 @@ function rootReducer(state = initialState, action) {
         .filter((e) => e.Year >= "2015"),
     };
   }
-
+  if (action.type === "KIDS") {
+    return {
+      ...state,
+      kid: action.payload
+        .map((mov) => mov.Search)
+        .flat()
+        .filter((e) => e.Year >= "2000"),
+    };
+  }
+  if (action.type === "COMICS") {
+    return {
+      ...state,
+      comics: action.payload
+        .map((mov) => mov.Search)
+        .flat()
+        .filter((e) => e.Year >= "2012"),
+    };
+  }
   return state;
 }
 export default rootReducer;
