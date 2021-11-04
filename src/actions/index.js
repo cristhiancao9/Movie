@@ -4,7 +4,7 @@ const movie = [];
 data.home.forEach((mov, i) => {
   movie.push(
     fetch(
-      `http://www.omdbapi.com/?apikey=2b9c4287&s=${data.home[i]}&type=movie`
+      `https://www.omdbapi.com/?apikey=2b9c4287&s=${data.home[i]}&type=movie`
     ).then((response) => response.json())
   );
 });
@@ -23,7 +23,7 @@ const nKids = [];
 data.kids.forEach((mov, i) => {
   nKids.push(
     fetch(
-      `http://www.omdbapi.com/?apikey=2b9c4287&s=${data.kids[i]}&type=movie`
+      `https://www.omdbapi.com/?apikey=2b9c4287&s=${data.kids[i]}&type=movie`
     ).then((response) => response.json())
   );
 });
@@ -42,7 +42,7 @@ const nComics = [];
 data.comics.forEach((mov, i) => {
   nComics.push(
     fetch(
-      `http://www.omdbapi.com/?apikey=2b9c4287&s=${data.comics[i]}&type=movie`
+      `https://www.omdbapi.com/?apikey=2b9c4287&s=${data.comics[i]}&type=movie`
     ).then((response) => response.json())
   );
 });
@@ -60,7 +60,7 @@ export function getComics() {
 export function getMovie(titulo) {
   return function (dispatch) {
     return fetch(
-      `http://www.omdbapi.com/?apikey=2b9c4287&s=${titulo}&type=movie`
+      `https://www.omdbapi.com/?apikey=2b9c4287&s=${titulo}&type=movie`
     )
       .then((response) => response.json())
       .then((json) => {
