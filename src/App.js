@@ -6,6 +6,7 @@ import { Route } from "react-router";
 import Card from "./components/Card";
 import Home from "./components/Home";
 import Kids from "./components/Kids";
+import Movie from "./components/Movie";
 import "../src/components/Card.css";
 import { Redirect } from "react-router";
 import Comics from "./components/Comics";
@@ -33,6 +34,7 @@ function App() {
         <Route path="/home" component={Home} />
         <Route path="/kids" component={Kids} />
         <Route path="/comics" component={Comics} />
+        <Route path="/movie/:id" component={Movie} />
         <Route path="/card" component={Card} />
       </Switch>
     </React.Fragment>

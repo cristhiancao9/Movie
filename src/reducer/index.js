@@ -17,7 +17,7 @@ function rootReducer(state = initialState, action) {
       homes: action.payload
         .map((mov) => mov.Search)
         .flat()
-        .filter((e) => e.Year >= "2015"),
+        .filter((e) => e.Year >= "2021"),
     };
   }
   if (action.type === "KIDS") {

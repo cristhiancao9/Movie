@@ -46,21 +46,23 @@ function Home(props) {
               <div key={e.imdbID} className="contenedor-card">
                 <img className="img_poster" src={e.Poster} alt="" />
                 <div className="contenedor-boton-play">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="icon icon-tabler icon-tabler-player-play"
-                    width="36"
-                    height="36"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="#ffffff"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M7 4v16l13 -8z" />
-                  </svg>
+                  <NavLink to={`/movie/${e.imdbID}`}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="icon icon-tabler icon-tabler-player-play"
+                      width="34"
+                      height="28"
+                      viewBox="0 0 23 21"
+                      strokeWidth="1.5"
+                      stroke="#ffffff"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M7 4v16l13 -8z" />
+                    </svg>
+                  </NavLink>
                 </div>
                 <div className="title-year">
                   <span className="title-cards"> {e.Title} </span>
