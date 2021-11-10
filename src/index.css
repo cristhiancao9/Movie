@@ -4,6 +4,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   background: rgb(111, 111, 184);
+
   backdrop-filter: blur(2px);
 
   /*   -webkit-font-smoothing: antialiased;

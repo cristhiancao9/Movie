@@ -1,16 +1,17 @@
 const data = {
   home: [
-    "Zone 414",
+    "Black Widow",
     "venom",
     "Snake Eyes",
-    "Way Down",
-    "Injustice",
-    "Dragon Fury",
+    "Army of Thieves",
+    "Shang-Chi",
+    "old",
+    "eternals",
     "luca",
-    "Demonic",
+    "Candyman",
     "Space Jam: A New Legacy",
-    "monos",
-    "what men",
+    "Knucks",
+    "See You Next Christmas",
   ],
   kids: [
     "cars",
@@ -21,5 +22,6 @@ const data = {
     "Escape 2 Africa",
   ],
   comics: ["iron man", "batman", "thor", "spider man", "hulk"],
+  IdHome: ["tt8545482"],
 };
 export default data;

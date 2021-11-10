@@ -3,8 +3,15 @@ const initialState = {
   homes: [],
   kid: [],
   comics: [],
+  m: [],
 };
 function rootReducer(state = initialState, action) {
+  if (action.type === "D") {
+    return {
+      ...state,
+      m: action.payload,
+    };
+  }
   if (action.type === "GET_MOVIES") {
     return {
       ...state,

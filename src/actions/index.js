@@ -68,3 +68,12 @@ export function getMovie(titulo) {
       });
   };
 }
+export function getDetail(id) {
+  return function (dispatch) {
+    return fetch(`https://www.omdbapi.com/?apikey=2b9c4287&i=${id}`)
+      .then((response) => response.json())
+      .then((json) => {
+        dispatch({ type: "D", payload: json });
+      });
+  };
+}
