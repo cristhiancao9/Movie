@@ -68,9 +68,9 @@ function Comics(props) {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="icon icon-tabler icon-tabler-player-play"
-                      width="36"
-                      height="36"
-                      viewBox="0 0 24 24"
+                      width="34"
+                      height="28"
+                      viewBox="0 0 23 21"
                       strokeWidth="1.5"
                       stroke="#ffffff"
                       fill="none"

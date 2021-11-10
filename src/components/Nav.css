@@ -50,7 +50,7 @@
   }
 }
 
-@media only screen and (max-width: 630px) {
+/* @media only screen and (max-width: 630px) {
   .nav-principal {
     flex-direction: column;
     align-items: center;
@@ -58,5 +58,23 @@
   .search {
     padding-left: 8vw;
     padding-top: 0.5vw;
+  }
+} */
+@media only screen and (max-width: 630px) {
+  .search {
+    padding-left: 30vw;
+  }
+}
+@media only screen and (max-width: 517px) {
+  .search {
+    padding-left: 20vw;
+  }
+}
+@media only screen and (max-width: 499px) {
+  .search {
+    padding-left: 10vw;
+  }
+  .img-titulo h1 {
+    display: none;
   }
 }

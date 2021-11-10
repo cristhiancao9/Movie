@@ -89,3 +89,8 @@
 .second_column_four_div {
   color: beige;
 }
+@media only screen and (max-width: 630px) {
+  .contenedor_img img {
+    display: none;
+  }
+}
