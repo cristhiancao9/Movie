@@ -53,19 +53,9 @@
   }
 }
 
-/* @media only screen and (max-width: 630px) {
-  .nav-principal {
-    flex-direction: column;
-    align-items: center;
-  }
-  .search {
-    padding-left: 8vw;
-    padding-top: 0.5vw;
-  }
-} */
 @media only screen and (max-width: 630px) {
   .search {
-    padding-left: 30vw;
+    padding-left: 35vw;
   }
   .img-titulo {
     display: none;
@@ -88,7 +78,7 @@
 label[for="toggle"] {
   position: fixed;
   top: 25px;
-  left: 22px;
+  left: 20px;
   color: white;
   z-index: 6;
   font-size: 1.5rem;
@@ -115,28 +105,30 @@ svg.hamburger {
 
   .navigation--responsive {
     display: block;
-    background: linear-gradient(to top, #be93c5, #7bc6cc);
-    width: 200px;
-    height: 100vh;
-    position: fixed;
+    background: linear-gradient(to top, #be93c59f, #7bc7ccbd);
+    width: 65px;
+    height: 45vh;
+    position: absolute;
+    z-index: 1;
     top: -100vh;
-    right: 0;
+    /*     right: 0;
     left: 0;
     bottom: 0;
     margin: 0;
-    padding: 0;
+    padding: 0; */
     transition: top 1s;
+    border-radius: 0px 0px 8px 0px;
   }
 
   .navigation--responsive ul {
     display: block;
     list-style: none;
-    height: 70vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    margin: 85px 0 0 0;
+    margin: 60px 0 0 0;
     padding: 0;
   }
 
@@ -146,9 +138,9 @@ svg.hamburger {
   }
 
   .navigation--responsive li a {
-    padding: 50px 20px 50px 30px;
+    padding: 50px 10px 50px 5px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: sans-serif;
   }
 
