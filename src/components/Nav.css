@@ -67,10 +67,16 @@
   .search {
     padding-left: 30vw;
   }
+  .img-titulo {
+    display: none;
+  }
 }
 @media only screen and (max-width: 517px) {
   .search {
     padding-left: 25vw;
+  }
+  .img-titulo {
+    display: none;
   }
 }
 @media only screen and (max-width: 499px) {
