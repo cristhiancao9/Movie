@@ -11,6 +11,8 @@
   color: #000000;
   font-weight: bold;
   outline: none;
+  font-family: "Krub", sans-serif;
+  font-size: small;
 }
 .btn-search {
   border-radius: 0 5px 5px 0;

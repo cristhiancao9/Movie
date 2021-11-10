@@ -104,13 +104,14 @@ svg.hamburger {
   }
 
   .navigation--responsive {
-    display: block;
-    background: linear-gradient(to top, #be93c59f, #7bc7ccbd);
+    display: flex;
+    background: linear-gradient(to top, #7bc7ccbd, #be93c59f);
     width: 65px;
     height: 45vh;
     position: absolute;
     z-index: 1;
     top: -100vh;
+    justify-content: center;
     /*     right: 0;
     left: 0;
     bottom: 0;
