@@ -12,6 +12,40 @@ function Nav(props) {
     <React.Fragment>
       <div className="nav-bg">
         <div className="nav-principal">
+          {/* <nav className="main-navigation">
+            <ul>
+              <li>
+                <a href="#/">Home</a>
+              </li>
+              <li>
+                <a href="#/">About</a>
+              </li>
+              <li>
+                <a href="#/">Contact</a>
+              </li>
+              <li>
+                <a href="#/">Blog</a>
+              </li>
+            </ul>
+          </nav> */}
+
+          <input type="checkbox" id="toggle" name="toggle" />
+          <nav className="navigation--responsive">
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#look-book">About</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <a href="#blog">Blog</a>
+              </li>
+            </ul>
+          </nav>
           <NavLink
             to="/home"
             className="titulo"
