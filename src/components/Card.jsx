@@ -6,7 +6,8 @@ import "./Card.css";
 
 function Card(props) {
   useEffect(() => {
-    document.body.style.background = "#6f6fb8";
+    document.body.style.background = "#333333";
+    /* document.body.style.background = "#6f6fb8"; */
   });
   return (
     <React.Fragment>

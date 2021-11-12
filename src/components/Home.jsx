@@ -7,7 +7,8 @@ import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 function Home(props) {
   useEffect(() => {
-    document.body.style.background = "#6f6fb8";
+    document.body.style.background = "#333333";
+    /*  document.body.style.background = "#6f6fb8"; */
   });
   function removeDuplicates(originalArray, prop) {
     var newArray = [];

@@ -7,7 +7,8 @@
   border-radius: 5px 0 0 5px;
   padding: 4px;
   border-right: none;
-  border: 3px solid rgb(53, 44, 145);
+  border: 3px solid #1f2227;
+  /*   border: 3px solid rgb(53, 44, 145); */
   color: #000000;
   font-weight: bold;
   outline: none;
@@ -17,8 +18,10 @@
 .btn-search {
   border-radius: 0 5px 5px 0;
   text-align: center;
-  border: 2px solid rgb(53, 44, 145);
+  border: 2px solid #1f2227;
+  /*   border: 2px solid rgb(53, 44, 145); */
   cursor: pointer;
   color: #fff;
-  background-color: rgb(70, 60, 175);
+  background-color: #1f2227;
+  /*  background-color: rgb(70, 60, 175); */
 }

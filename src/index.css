@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  font-family: "Krub", sans-serif;
-  background: rgb(111, 111, 184);
+  font-family: "Montserrat", sans-serif;
+  background: #333333;
+  /*   background: rgb(111, 111, 184); */
 
   backdrop-filter: blur(2px);
 

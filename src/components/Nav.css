@@ -1,7 +1,7 @@
 .nav-bg {
-  /*  background-color: #2c2e30; */
+  background-color: #1a1d21;
   /*   background-color: rgb(70, 60, 175); */
-  background-color: rgb(70, 60, 175);
+  /*  background-color: rgb(70, 60, 175); */
   height: 4rem;
 }
 .nav-principal {
@@ -33,6 +33,7 @@
 .titulo {
   color: white;
   text-decoration: none;
+  font-family: "Righteous", cursive;
 }
 @media only screen and (max-width: 1250px) {
   .search {

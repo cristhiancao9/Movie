@@ -4,11 +4,12 @@ import { useEffect } from "react";
 import { useParams } from "react-router";
 import { getDetail } from "../actions/index";
 import { connect } from "react-redux";
+import Trailers from "./Trailers";
 function Movie(props) {
   const params = useParams();
 
   useEffect(() => {
-    document.body.style.background = " #131314";
+    document.body.style.background = "#131314";
     props.getDetail(params.id);
   }, [props, params.id]);
 
@@ -136,6 +137,10 @@ function Movie(props) {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="division"></div>
+          <div className="trailer">
+            <Trailers hola={props.m.Title}></Trailers>
           </div>
         </div>
       </div>

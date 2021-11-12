@@ -6,6 +6,7 @@ import Search from "./Search";
 import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 import { getHome } from "../actions/index";
+
 function Nav(props) {
   let history = useHistory();
   return (
